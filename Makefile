@@ -1,8 +1,8 @@
 build:
-	gcc main.c functii.c -o main.o
+	gcc main.c functii.c -std=c11 -lm -o quadtree
 
-run: main.o
-	./main.o
+run: build
+	./quadtree
 
 clean:
-	rm -f *.o
+	rm -f quadtree
